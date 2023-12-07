@@ -31,7 +31,7 @@ const ProductsDetail = ({ products }) => {
 
   useEffect(() => {
     document.addEventListener("keydown", handleKeyDown, true);
-  }, []);
+  });
 
   function handleKeyDown(e) {
     console.log(e.keyCode);
