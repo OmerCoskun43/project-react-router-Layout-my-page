@@ -8,13 +8,14 @@ const ProductsDetail = ({ products }) => {
   // console.log(params);
   const [product, setProduct] = useState("");
 
-  const getProduct = async () => {
-    const { data } = await axios.get(`https://fakestoreapi.com/products/${id}`);
-
-    setProduct(data);
-  };
-
   useEffect(() => {
+    const getProduct = async () => {
+      const { data } = await axios.get(
+        `https://fakestoreapi.com/products/${id}`
+      );
+
+      setProduct(data);
+    };
     getProduct();
   }, [id]);
 
@@ -29,19 +30,19 @@ const ProductsDetail = ({ products }) => {
     product.id > 1 && navigate(`/products/${Number(product?.id) - 1}`);
   };
 
-  useEffect(() => {
-    document.addEventListener("keydown", handleKeyDown, true);
-  });
+  // useEffect(() => {
+  //   document.addEventListener("keydown", handleKeyDown, true);
+  // }, []);
 
-  function handleKeyDown(e) {
-    console.log(e.keyCode);
-    if (e.keyCode === 39) {
-      handleNext();
-    }
-    if (e.keyCode === 37) {
-      handlePrev();
-    }
-  }
+  // function handleKeyDown(e) {
+  //   console.log(e.keyCode);
+  //   if (e.keyCode === 39) {
+  //     handleNext();
+  //   }
+  //   if (e.keyCode === 37) {
+  //     handlePrev();
+  //   }
+  // }
 
   return (
     <div className="product_page">
