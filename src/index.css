@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Montagu+Slab:opsz,wght@16..144,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,300&family=Montagu+Slab:opsz,wght@16..144,300&family=Reggae+One&display=swap");
+
+body {
+  background: #007991; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #78ffd6,
+    #007991
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #78ffd6,
+    #007991
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Bellota", serif;
+}
+
+.nav_div {
+  background: #7f7fd5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #91eae4,
+    #86a8e7,
+    #7f7fd5
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Aclonica", sans-serif;
+}
+
+.about_page {
+  font-family: "Bellota", serif;
+  padding: 4rem 5rem 5rem 3rem;
+  text-align: justify;
+}
+
+.about_page h1 {
+  color: darkblue;
+  font-weight: bold;
+  text-indent: 2rem;
+}
+
+.about_page h3 {
+  text-indent: 2rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+}
+
+.contact_page {
+  font-family: "Bellota", serif;
+  padding: 4rem 5rem 5rem 3rem;
+  text-align: justify;
+}
+
+.contact_page h1 {
+  color: darkblue;
+  font-weight: bold;
+  text-indent: 2rem;
+}
+
+.contact_page h3 {
+  text-indent: 2rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+}
+
+.contact_page h3 span {
+  color: red;
+}
+
+.products_page {
+  font-family: "Bellota", serif;
+  padding: 2rem 2rem 2rem 3rem;
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.products_page div {
+  background-color: #7f7fd5;
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 300px;
+  height: 200px;
+  border-radius: 2rem;
+}
+
+.products_page__div {
+  cursor: pointer;
+  box-shadow: -3px 5px 10px 5px rgba(0, 0, 0, 0.7);
+}
+
+.products_page__div:active {
+  transform: scale(0.95);
+}
+
+.products_page p {
+  color: white;
+}
+
+.products_page h3 {
+  color: crimson;
+  font-weight: bold;
+}
+
+.products_page__div:hover p {
+  color: red;
+}
+
+.products_page__div:hover h3 {
+  color: white;
+}
+
+.products_page_h {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  font-family: "Bellota", serif;
+  font-weight: bold;
+  color: white;
+}
+
+.product_page {
+  text-align: center;
+  margin: 1.5rem auto;
+  width: 60%;
+  font-weight: bold;
+  height: 100vh;
+  /* background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem; */
+  position: relative;
+}
+
+.product_page h1 {
+  font-weight: bold;
+}
+
+.product_page h5 {
+  color: red;
+  font-weight: bold;
+}
+.product_page img {
+  width: 150px;
+  height: 200px;
+  border-radius: 1rem;
+  box-shadow: -3px 5px 10px 5px #7f7fd5;
+  cursor: pointer;
+}
+
+.product_page p {
+  text-align: justify;
+  margin-top: 0.8rem;
+  text-indent: 2rem;
+}
+
+.product_page h6 {
+  font-weight: bold;
+  color: white;
+}
+
+.product_page h6 span {
+  color: red;
+}
+
+.product_prices {
+  background-color: #7f7fd5;
+  width: max-content;
+  margin: 0rem auto;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+}
+
+.product_page__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+
+.product_page__buttons button {
+  border: none;
+  width: 10rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  background-color: red;
+}
+
+.product_page__buttons button:active {
+  transform: scale(0.95);
+}
+
+.footer_page {
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+  width: 100%;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.footer_page p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer_page p span {
+  color: red;
+}
+
+.footer_page .sp1 {
+  animation: footDate ease-in-out 2s infinite;
+}
+
+@keyframes footDate {
+  0% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
